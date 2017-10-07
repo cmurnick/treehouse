@@ -3,18 +3,17 @@
 
 const dom = require('./dom');
 
-let cats = [];
+let badges = [];
 
-const catsLoad = (catValue) => { 
-$.ajax({url:`https://teamtreehouse.com/caitlinmurnick.json`}).done((data) => {
-	cats = data.cats;
-	dom.createDomString(cats);
+
+$.ajax({method: 'GET', url:`https://teamtreehouse.com/caitlinmurnick.json`}).done((data) => {
+	badges = data.badges;
+	dom.createDomString(badges);
 	
 }).fail((error) => {
 	console.log(error);
 });
-};
 
 
 
-module.exports = {catsLoad};
+module.exports = {};
