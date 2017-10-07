@@ -2,3 +2,4 @@
 
 require('./badges');
 require('./dom');
+require('./events');

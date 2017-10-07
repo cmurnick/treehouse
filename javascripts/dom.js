@@ -12,7 +12,6 @@ const createDomString = (badgez) => {
 
 		newBadge +=	  `<div class="image-container">`;
 		newBadge +=	    `<img class="img-fluid" src="${badgez[i].icon_url}">`;
-
 		newBadge +=	  `</div>`;
 		newBadge +=	  `<div class="description-container">`;
 		newBadge +=	    `<h3> ${badgez[i].name} </h3>`;

@@ -25,6 +25,10 @@ h3 {
 	
 }
 
-
+.big {
+	height: 700px;
+	width: 350px;
+	background-color: rgb(66, 244, 206);
+}
 
 
