@@ -8,9 +8,10 @@ const createDomString = (badgez) => {
 	
     for(let i=0; i<badgez.length; i++){
         let newBadge = "";
-        newBadge +=	`<div class="cat-card thumbnail col-sm-6 col-md-3">`;
-		newBadge +=	  `<div class="image-container ">`;
-		newBadge +=	    `<img src="${badgez[i].icon_url}">`;
+        newBadge +=	`<div id="all" class="cat-card thumbnail col-sm-6 col-md-3">`;
+
+		newBadge +=	  `<div class="image-container">`;
+		newBadge +=	    `<img class="img-fluid" src="${badgez[i].icon_url}">`;
 		newBadge +=	  `</div>`;
 		newBadge +=	  `<div class="description-container">`;
 		newBadge +=	    `<h3> ${badgez[i].name} </h3>`;
