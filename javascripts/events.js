@@ -14,6 +14,7 @@ const dom = require('./dom');
 
 $('body').on("click", '.whole', (event) => {
 	$(event.target).parentsUntil(".crap").toggleClass("big");
+	
 });
 // $("body").on("mouseleave", '.whole', (event) => {
 // 	$(event.target.parent).removeClass("big");
