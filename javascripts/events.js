@@ -13,7 +13,8 @@ const dom = require('./dom');
 // });
 
 $('body').on("click", '.whole', (event) => {
-	$(event.target).parentsUntil(".crap").toggleClass("big");
+	// $(event.target).parentsUntil(".crap").toggleClass("big");
+	$(event.target).closest(".whole").toggleClass("big");
 	
 });
 // $("body").on("mouseleave", '.whole', (event) => {
